@@ -16,5 +16,6 @@ async function getData() {
 		
 	} catch (error) {
 		console.error(error);
+		alert("The Link is protected to be shortened");
 	}
 }
