@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="index.js"></script>
+	<title>URL SHORTNER</title>
+</head>
+<body>
+
+	<div class="container">
+		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+			<a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+				<svg class="bi me-2" width="40" height="32"></svg>
+				<span class="fs-4">URL SHORTNER WEBSITE</span>
+			</a>
+        </header>
+    </div>
+    <br><br><br><br>
+
+	<header class="py-3 mb-3">
+		<div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+			<div class="d-flex align-items-center">
+				<form class="w-100 me-3" role="search">
+					<input type="search" class="form-control" placeholder="Enter the URL to Shorten it...." aria-label="Search" id='URL_1'><br>
+					<div class="d-grid gap-2 d-md-block">
+						<button class="btn btn-primary" type="button" onclick="getData()">Convert</button>
+					</div>
+                </form>
+            </div>
+        </div>
+  </header>
+
+  <div class="result">
+  	<h2 class='w-100 me-3'>The Coverted URL :- <span id="full_short_link"></span></h2>
+  </div>
+
+</body>
+</html>
