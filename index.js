@@ -12,7 +12,7 @@ async function getData() {
 		console.log(result);
 
 		const shortLink = result.result.full_short_link;
-		document.getElementById('full_short_link').innerHTML = 'The Coverted URL :- ' + `<a href = "${shortLink}" target = 'blank'>${shortLink}</a>`
+		document.getElementById('full_short_link').innerHTML = `The Coverted URL :- <a href = "${shortLink}" target = 'blank'>${shortLink}</a>`
 		
 	} catch (error) {
 		console.error(error);
